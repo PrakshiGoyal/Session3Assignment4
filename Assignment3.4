@@ -1,0 +1,4 @@
+NameNode in Hadoop Cluster:
+
+NameNode is the major piece of HDFS file system.It stores the metadata of all the nodes. Namenode also maintains the directory tree of all the files in the file system and keeps a track a to where in the cluster, the file is kept.NameNode is called as the Master Node. NameNode does not store the data of all its slave nodes.NameNode knows how to construct the file from blocks. Duing Hadop 1.x, NameNode was the single point of failure and the Hadoop cluster was considered down. In Hadoop 2.x, a secondary NameNode is present which acts as a backup node to provide high availability. When the active namenode goes down, Secondary namenode becomes active. 
+Therefore NameNode is essential to Hadoop Cluster.
